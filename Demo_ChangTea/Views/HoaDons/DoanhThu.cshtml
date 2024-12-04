@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Demo_ChangTea.Models.DoanhThuModel>
+
+@{
+    ViewBag.Title = "DoanhThu";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+    var total = Model.Sum(item => item.TongBillSauGiamGia);
+}
+
+<style>
+    #btn-create {
+        border: 1px solid ;
+        padding: 8px;
+        color: black;
+        width: fit-content;
+        background-color: none;
+    }
+
+        #btn-create:hover {
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+
+    #btn-print {
+        border: 1px solid rgba(12,67,150,255);
+        padding: 8px;
+        color: rgba(12,67,150,255);
+        width: fit-content;
+        background-color: none;
+        margin-bottom: 15px;
+    }
+
+        #btn-print:hover {
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+</style>
+
+<h2><b>Doanh Thu</b></h2>
+
+<!-- Print Button -->
+<button id="btn-print" onclick="printTable()">In bảng doanh thu <i class="fa-solid fa-print"></i></button>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã đơn hàng
+        </th>
+        <th>
+            Nhân viên
+        </th>
+        <th>
+            Khách hàng
+        </th>
+        <th>
+            Thời gian lập
+        </th>
+        <th>
+            Giảm giá
+        </th>
+        <th>
+            Tổng tiền
+        </th>
+        <th>
+            Thành tiền
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThoiGianLap)
+            </td>
+            <td>
+                @string.Format("{0:0}%", item.GiamGia * 100)
+            </td>
+            <td>
+                @Html.Raw(string.Format("{0:0.#} VND", item.TongBill))
+            </td>
+            <td>
+                @Html.Raw(string.Format("{0:0.#} VND", item.TongBillSauGiamGia))
+            </td>
+        </tr>
+    }
+
+    <!-- Add a row for the total -->
+    <tr style="background-color: #ffe459">
+        <td colspan="6" style="text-align:right; font-weight:bold;">Tổng doanh thu:</td>
+        <td>
+            @Html.Raw(string.Format("{0:0.#} VND", total))
+        </td>
+    </tr>
+</table>
+
+<script>
+    function printTable() {
+        var printWindow = window.open('', '', 'height=600,width=800');
+        printWindow.document.write('<html><head><title>Doanh Thu</title></head><body>');
+        printWindow.document.write('<h2><b>Doanh Thu</b></h2>');
+        printWindow.document.write(document.querySelector('table').outerHTML);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.print();
+    }
+</script>

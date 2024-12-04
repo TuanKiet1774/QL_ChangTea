@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Demo_ChangTea.Models.HoaDon>
+
+@{
+    ViewBag.Title = "DanhSachHoaDon";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DanhSachHoaDon</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Mã hóa đơn</th>
+            <th>Mã đơn hàng</th>
+            <th>Khách hàng</th>
+            <th>Nhân viên</th>
+            <th>Thời gian lập</th>
+            <th>Giảm giá</th>
+            <th>Phương thức thanh toán</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var hoaDon in Model)
+        {
+            <tr>
+                <td>@hoaDon.MaHD</td>
+                <td>@hoaDon.MaDH</td>
+                <td>@hoaDon.KhachHang.MaKH</td>
+                <td>@hoaDon.NhanVien.MaNV</td>
+                <td>@hoaDon.ThoiGianLap</td>
+                <td>@hoaDon.GiamGia</td>
+                <td>@hoaDon.PT_ThanhToan.MaPTTT</td>
+                <td>
+                    <a href="@Url.Action("Edit",new { id = hoaDon.MaHD})" class="edit-btn">
+                        <abbr title="Cập nhật dữ liệu">
+                            <img src="/images/edit.png" width="20" height="20" />
+                        </abbr>
+                    </a>
+                    <a href="@Url.Action("Details",new { id = hoaDon.MaHD})" class="edit-btn">
+                        <abbr title="Xem chi tiết">
+                            <img src="/images/details.png" width="20" height="20" />
+                        </abbr>
+                    </a>
+                    <a href="@Url.Action("Delete",new { id = hoaDon.MaHD})" class="edit-btn">
+                        <abbr title="Xóa dữ liệu">
+                            <img src="/images/delete.png" width="20" height="20" />
+                        </abbr>
+                    </a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+

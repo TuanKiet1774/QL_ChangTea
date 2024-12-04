@@ -1,0 +1,99 @@
+﻿@model Demo_ChangTea.Models.NhanVien
+
+@{
+    ViewBag.Title = "Thông tin nhân viên";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    string gtinh = "";
+}
+
+<style>
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+    .btn-back, .btn-edit {
+        margin-right: 10px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+        .btn-back:hover, .btn-edit:hover {
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+</style>
+
+<h2><b>Thông tin chi tiết</b></h2>
+<hr />
+<div>
+    <table class="table table-bordered" style="border-collapse: collapse; width: 70%; margin-left: 20px; font-family: Arial, sans-serif;">
+        <thead>
+            <tr style="background-color: #ffe459;">
+                <th>Thông tin</th>
+                <th>Giá trị</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Họ</td>
+                <td>@Html.DisplayFor(model => model.HoNV)</td>
+            </tr>
+            <tr>
+                <td>Tên</td>
+                <td>@Html.DisplayFor(model => model.TenNV)</td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    @{if (Model.GioiTinh == true)
+                        { gtinh = "Nam"; }
+                        else
+                        { gtinh = "Nữ"; }
+                    }
+                    @gtinh
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>@(Model.NgaySinh.HasValue ? Model.NgaySinh.Value.ToString("dd/MM/yyyy") : "N/A")</td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td>@Html.DisplayFor(model => model.SoDT)</td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>@Html.DisplayFor(model => model.DiaChi)</td>
+            </tr>
+            <tr>
+                <td>Chức vụ</td>
+                <td>@Html.DisplayFor(model => model.ChucVu)</td>
+            </tr>
+            <tr>
+                <td>Ngày làm việc</td>
+                <td>@(Model.NgayLamViec.HasValue ? Model.NgayLamViec.Value.ToString("dd/MM/yyyy") : "N/A")</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="display: flex;">
+    <div class="btn-edit">
+        @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaNV })
+    </div>
+    <div class="btn-back">
+        @Html.ActionLink("Quay lại", "Index")
+    </div>
+</div>
+

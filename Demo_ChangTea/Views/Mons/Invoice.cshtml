@@ -1,0 +1,363 @@
+﻿@model List<Demo_ChangTea.Models.Mon>
+@{
+    ViewBag.Title = "Hóa đơn";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    .btn-back, .btn-pay, .btn-delete {
+        margin-right: 10px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+        .btn-back:hover {
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+
+        .btn-pay:hover {
+            color: white;
+            background-color: lawngreen;
+            transform: scale(1.1);
+        }
+
+        .btn-delete:hover {
+            color: white;
+            background-color: red;
+            transform: scale(1.1);
+        }
+
+    #print-invoice {
+        margin-right: 10px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 20px;
+        color: rgba(12,67,150,255);
+    }
+        #print-invoice:hover {
+            color: rgba(12,67,150,255);
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+
+    input[type="number"] {
+        width: 60px;
+        text-align: center;
+    }
+
+    .discount-input, .payment-select {
+        width: 150px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .bank-transfer-details {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+
+    .customer-info, .cashier-selection {
+        margin-bottom: 20px;
+    }
+
+    .info-input {
+        width: 200px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .cashier-selection label, .customer-info label {
+        display: block;
+        margin-top: 10px;
+    }
+</style>
+
+<h2><b>Hóa đơn</b></h2>
+<hr />
+<!-- Form nhập thông tin khách hàng -->
+<div class="customer-info d-flex justify-content-between">
+    <label for="customer-id">
+        <b>Mã hóa đơn:</b>
+        <input type="text" id="customer-id" class="info-input" placeholder="Nhập mã hóa đơn" />
+    </label>
+    <label for="customer-id">
+        <b>Mã đơn hàng:</b>
+        <input type="text" id="customer-id" class="info-input" placeholder="Nhập mã đơn hàng" />
+    </label>
+
+    <label for="customer-id">
+        <b>Mã khách hàng:</b>
+        <input type="text" id="customer-id" class="info-input" placeholder="Nhập mã khách hàng" />
+    </label>
+
+    <label for="customer-name">
+        <b>Tên khách hàng:</b>
+        <input type="text" id="customer-name" class="info-input" placeholder="Nhập tên khách hàng" />
+    </label>
+
+    <label for="customer-phone">
+        <b>Số điện thoại:</b>
+        <input type="text" id="customer-phone" class="info-input" placeholder="Nhập số điện thoại" />
+    </label>
+</div>
+
+<hr />
+
+<!-- Form chọn nhân viên thu ngân -->
+<div class="cashier-selection">
+    <div class="d-flex w-100">
+        <label for="cashier"><b>Thu ngân:</b> </label>
+        <select id="cashier" class="payment-select ms-3" style="width: fit-content;">
+            <option value="" disabled selected>Chọn nhân viên</option>
+            <option value="1">Cao Linh Hà</option>
+            <option value="2">Huỳnh Minh Bảo</option>
+        </select>
+    </div>
+</div>
+
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã món</th>
+            <th>Tên món</th>
+            <th>Size</th>
+            <th>Đơn vị</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Tổng giá</th>
+            <th>Tùy chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var item = Model[i];
+            <tr>
+                <td>@item.MaMon</td>
+                <td>@item.TenMon</td>
+                <td>@item.MaKichThuoc</td>
+                <td>@item.DonVi</td>
+                <td>@String.Format("{0:N0}", item.DonGia)</td>
+                <td>
+                    <input type="number" value="1" min="1" data-id="@item.MaMon" class="quantity-input" />
+                </td>
+                <td class="total-price-item">
+                    @String.Format("{0:N0}", item.DonGia)
+                </td>
+                <td>
+                    @Html.ActionLink("Xóa", "RemoveFromInvoice", new { id = item.MaMon }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr />
+<div class="order-date">
+    <b>Thời gian đặt hóa đơn:</b> <span id="order-date">@DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")</span>
+</div>
+
+<hr />
+<div class="discount">
+    <label for="discount"><b>Giảm giá (%):</b> </label>
+    <input type="number" id="discount" class="discount-input" value="0" min="0" max="100" />
+</div>
+
+<hr />
+<div class="payment-method">
+    <label for="payment"><b>Phương thức thanh toán:</b></label>
+    <select id="payment" class="payment-select">
+        <option value="cash">Tiền mặt</option>
+        <option value="bank-transfer">Chuyển khoản</option>
+    </select>
+</div>
+
+<!-- Bank Transfer Details (Hidden by Default) -->
+<div id="bank-transfer-details" class="bank-transfer-details">
+    <div class="d-flex">
+        <div>
+            <p><b>Thông tin chuyển khoản: </b></p>
+            <p><b>STK:</b> 123456789</p>
+            <p><b>Ngân hàng:</b> IT Bank</p>
+            <p><b>Tên người dùng:</b> NHOM4 64.CNTT-1</p>
+        </div>
+        <div style="margin-left: 100px;">
+            <img src="~/Images/QR_Code.png" alt="" width="150" height="150" />
+        </div>
+    </div>
+</div>
+
+<hr />
+@{
+    var totalPrice = Model.Sum(item => item.DonGia);
+}
+
+<div class="total-price">
+    <b>Tổng tiền:</b> <span id="total-price">@String.Format("{0:N0}", totalPrice)</span>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+    <div class="btn-back">
+        @Html.ActionLink("Quay lại", "Index")
+    </div>
+    <button id="print-invoice" class="btn">In hóa đơn</button>
+    <div class="btn-pay">
+        @Html.ActionLink("Thanh toán", "Checkout")
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const quantityInputs = document.querySelectorAll(".quantity-input");
+        const totalPrices = document.querySelectorAll(".total-price-item");
+        const totalPriceSpan = document.getElementById("total-price");
+        const discountInput = document.getElementById("discount");
+        const paymentSelect = document.getElementById("payment");
+        const bankTransferDetails = document.getElementById("bank-transfer-details");
+        const cashierSelect = document.getElementById("cashier");
+        const customerIdInput = document.getElementById("customer-id");
+        const customerNameInput = document.getElementById("customer-name");
+        const customerPhoneInput = document.getElementById("customer-phone");
+
+        // Cập nhật tổng giá mỗi món và tổng tiền
+        quantityInputs.forEach((input, index) => {
+            input.addEventListener("input", updateTotal);
+        });
+
+        // Cập nhật tổng tiền khi thay đổi giảm giá
+        discountInput.addEventListener("input", updateTotal);
+
+        // Cập nhật tổng tiền khi thay đổi phương thức thanh toán
+        paymentSelect.addEventListener("change", function () {
+            updateTotal();
+            toggleBankTransferDetails();
+        });
+
+        // Gắn sự kiện để kiểm tra nhập thông tin
+        cashierSelect.addEventListener("change", function () {
+            console.log("Nhân viên thu ngân:", cashierSelect.value);
+        });
+
+        customerIdInput.addEventListener("blur", function () {
+            console.log("Mã khách hàng:", customerIdInput.value);
+        });
+
+        customerNameInput.addEventListener("blur", function () {
+            console.log("Tên khách hàng:", customerNameInput.value);
+        });
+
+        customerPhoneInput.addEventListener("blur", function () {
+            console.log("Số điện thoại:", customerPhoneInput.value);
+        });
+
+        // Ẩn/Hiển thị thông tin chuyển khoản khi thay đổi phương thức thanh toán
+        function toggleBankTransferDetails() {
+            if (paymentSelect.value === 'bank-transfer') {
+                bankTransferDetails.style.display = 'block';
+            } else {
+                bankTransferDetails.style.display = 'none';
+            }
+        }
+
+        // Cập nhật tổng tiền
+        function updateTotal() {
+            // Cập nhật tổng giá mỗi món
+            totalPrices.forEach((priceElement, index) => {
+                const quantity = parseInt(quantityInputs[index].value);
+                const unitPrice = parseFloat(quantityInputs[index].closest("tr").querySelector("td:nth-child(5)").innerText.replace(/[^0-9.-]+/g, ""));
+                const totalPriceItem = quantity * unitPrice;
+
+                priceElement.innerText = totalPriceItem.toLocaleString();
+            });
+
+            // Tính tổng tiền
+            let totalPrice = Array.from(totalPrices).reduce((sum, elem) => {
+                return sum + parseFloat(elem.innerText.replace(/[^0-9.-]+/g, ""));
+            }, 0);
+
+            // Áp dụng giảm giá
+            const discount = parseFloat(discountInput.value) || 0;
+            totalPrice -= totalPrice * (discount / 100);
+
+            // Cập nhật tổng tiền
+            totalPriceSpan.innerText = totalPrice.toLocaleString();
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const printButton = document.getElementById("print-invoice");
+
+        printButton.addEventListener("click", function () {
+            // Tạo nội dung HTML chỉ cho hóa đơn
+            const invoiceContent = `
+            <div style="width: 80%; margin: auto; font-family: Arial, sans-serif;">
+                <h2 style="text-align: center;">Hóa Đơn</h2>
+                <hr />
+                <p><b>Mã khách hàng:</b> ${document.getElementById("customer-id").value || "N/A"}</p>
+                <p><b>Tên khách hàng:</b> ${document.getElementById("customer-name").value || "N/A"}</p>
+                <p><b>Số điện thoại:</b> ${document.getElementById("customer-phone").value || "N/A"}</p>
+                <p><b>Thu ngân:</b> ${document.getElementById("cashier").selectedOptions[0]?.text || "N/A"}</p>
+                <p><b>Thời gian đặt:</b> ${document.getElementById("order-date").innerText}</p>
+                <hr />
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #000; padding: 5px;">Mã món</th>
+                            <th style="border: 1px solid #000; padding: 5px;">Tên món</th>
+                            <th style="border: 1px solid #000; padding: 5px;">Size</th>
+                            <th style="border: 1px solid #000; padding: 5px;">Đơn giá</th>
+                            <th style="border: 1px solid #000; padding: 5px;">Số lượng</th>
+                            <th style="border: 1px solid #000; padding: 5px;">Tổng giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${Array.from(document.querySelectorAll(".table tbody tr")).map(row => `
+                            <tr>
+                                <td style="border: 1px solid #000; padding: 5px;">${row.children[0].innerText}</td>
+                                <td style="border: 1px solid #000; padding: 5px;">${row.children[1].innerText}</td>
+                                <td style="border: 1px solid #000; padding: 5px;">${row.children[2].innerText}</td>
+                                <td style="border: 1px solid #000; padding: 5px;">${row.children[4].innerText}</td>
+                                <td style="border: 1px solid #000; padding: 5px;">${row.children[5].querySelector("input").value}</td>
+                                <td style="border: 1px solid #000; padding: 5px;">${row.children[6].innerText}</td>
+                            </tr>
+                        `).join("")}
+                    </tbody>
+                </table>
+                <hr />
+                <p><b>Giảm giá:</b> ${document.getElementById("discount").value || 0}%</p>
+                <p><b>Tổng tiền:</b> ${document.getElementById("total-price").innerText}</p>
+                <p><b>Phương thức thanh toán:</b> ${document.getElementById("payment").selectedOptions[0].text}</p>
+            </div>
+        `;
+
+            // Mở cửa sổ mới và in
+            const printWindow = window.open("", "PRINT", "width=600,height=800");
+            printWindow.document.write(`
+            <html>
+                <head>
+                    <title>Hóa Đơn</title>
+                </head>
+                <body>${invoiceContent}</body>
+            </html>
+        `);
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+            printWindow.close();
+        });
+    });
+
+</script>

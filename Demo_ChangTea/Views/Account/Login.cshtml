@@ -1,0 +1,83 @@
+﻿@model Demo_ChangTea.Models.Login
+
+@{
+    ViewBag.Title = "Đăng nhập vào dữ liệu của nhân viên";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    #btn-back {
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+        #btn-back:hover {
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+
+    .btn-login {
+        color: rgba(12,67,150,255);
+        width: fit-content;
+        background-color: none;
+    }
+
+    #btn-login:hover {
+        color: black;
+        background-color: #ffe459;
+        transform: scale(1.1);
+    }
+</style>
+
+<h2><b>Đăng nhập quản trị viên</b></h2>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="d-flex">
+    <ul style="list-style: none;">
+        <li>
+            <b>Username</b>
+        </li>
+        <li>
+            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @style = "width: 300px;" })
+        </li>
+        <li>
+            <b>Password</b>
+        </li>
+        <li>
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @style = "width: 300px;" })
+        </li>
+        <li class="d-flex">
+            <div class="form-group mt-3 ps-3">
+                <input type="submit" value="Đăng nhập" class="btn btn-outline-primary" />
+            </div>
+            <div id="btn-back" class="ms-5">
+                @Html.ActionLink("Quay lại", "Index", "Mons")
+            </div>
+        </li>
+    </ul>
+
+    <div style="margin-left: 100px;">
+        <img src="~/Images/Logo.png" alt="" width="150" height="150" />
+    </div>
+</div>
+
+    
+}
+
+@if (ViewData.ModelState.Count > 0)
+{
+    <div class="alert alert-danger">
+        @Html.ValidationSummary(true)
+    </div>
+}
+
+
+

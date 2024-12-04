@@ -1,0 +1,132 @@
+﻿@model Demo_ChangTea.Models.NhanVien
+
+@{
+    ViewBag.Title = "Chỉnh sửa thông tin nhân viên";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style>
+    #btn-back {
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+        #btn-back:hover {
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+
+    .btn-save {
+        color: rgba(12,67,150,255);
+        width: fit-content;
+        background-color: none;
+    }
+
+        .btn-save:hover {
+            color: #ffe459;
+            background-color: green;
+            transform: scale(1.1);
+        }
+</style>
+
+<h2><b>Chỉnh sửa thông tin nhân viên</b></h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal d-flex">
+        <div class="me-5">
+            <div class="form-group">
+                Mã nhân viên
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.MaNV, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaNV, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Họ nhân viên
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.HoNV, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.HoNV, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Tên nhân viên
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.TenNV, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenNV, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Giới tính
+                <div class="col-md-10 w-100">
+                    <div class="checkbox">
+                        Nam @Html.RadioButtonFor(model => model.GioiTinh, "True", new { @checked = "checked" }) &nbsp;
+                        Nữ @Html.RadioButtonFor(model => model.GioiTinh, "False")
+                        @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                Ngày sinh
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="form-group">
+                Số điện thoại
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.SoDT, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SoDT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Địa chỉ
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Chức vụ
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.ChucVu, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ChucVu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Ngày làm việc
+                <div class="col-md-10 w-100">
+                    @Html.EditorFor(model => model.NgayLamViec, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NgayLamViec, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group mt-3">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Lưu thay đổi" class="btn btn-save btn-outline-primary btn-default" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div id="btn-back">
+    @Html.ActionLink("Quay lại", "Index")
+</div>

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|d:\\ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\demo_changtea\\views\\hoadons\\doanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\hoadons\\doanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|d:\\ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\demo_changtea\\views\\hoadons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\hoadons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\HoaDons\\Index.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\Index.cshtml",
+              "RelativeToolTip": "Views\\HoaDons\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T10:28:57.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoanhThu.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\DoanhThu.cshtml",
+              "RelativeDocumentMoniker": "Views\\HoaDons\\DoanhThu.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\DoanhThu.cshtml",
+              "RelativeToolTip": "Views\\HoaDons\\DoanhThu.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAHUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T10:28:02.48Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

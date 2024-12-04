@@ -1,0 +1,87 @@
+﻿@model Demo_ChangTea.Models.Mon
+
+@{
+    ViewBag.Title = "Thông tin chi tiết món";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    .btn-back, .btn-edit {
+        margin-right: 10px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+        .btn-back:hover, .btn-edit:hover{
+            color: black;
+            background-color: #ffe459;
+            transform: scale(1.1);
+        }
+</style>
+
+<h2><b>Thông tin chi tiết món</b></h2>
+<hr />
+<div style="display: flex;">
+    <!-- Hình ảnh -->
+    <img src="~/Images/@Html.DisplayFor(model => model.AnhMon)" alt="" width="330" style="margin-inline: 50px;" />
+
+    <!-- Bảng thông tin -->
+    <table style="border-collapse: collapse; width: 70%; margin-left: 20px; font-family: Arial, sans-serif;">
+        <thead>
+            <tr style="background-color: #ffe459;">
+                <th>Thông tin</th>
+                <th>Giá trị</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mã món</td>
+                <td>@Html.DisplayFor(model => model.MaMon)</td>
+            </tr>
+            <tr>
+                <td>Tên món</td>
+                <td>@Html.DisplayFor(model => model.TenMon)</td>
+            </tr>
+            <tr>
+                <td>Ảnh món</td>
+                <td>@Html.DisplayFor(model => model.AnhMon)</td>
+            </tr>
+            <tr>
+                <td>Size</td>
+                <td>@Html.DisplayFor(model => model.Size)</td>
+            </tr>
+            <tr>
+                <td>Đơn vị</td>
+                <td>@Html.DisplayFor(model => model.DonVi)</td>
+            </tr>
+            <tr>
+                <td>Đơn giá</td>
+                <td>@Html.DisplayFor(model => model.DonGia)</td>
+            </tr>
+            <tr>
+                <td>Mô tả</td>
+                <td>@Html.DisplayFor(model => model.MoTa)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="display: flex;">
+    <div class="btn-edit">
+        @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaMon })
+    </div>
+    <div class="btn-back">
+        @Html.ActionLink("Quay lại", "Index")
+    </div>
+</div>
