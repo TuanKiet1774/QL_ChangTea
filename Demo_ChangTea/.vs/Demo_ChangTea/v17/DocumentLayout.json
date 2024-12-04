@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|d:\\ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\demo_changtea\\views\\hoadons\\doanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\hoadons\\doanhthu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|d:\\ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\demo_changtea\\views\\mons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|d:\\ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\demo_changtea\\views\\hoadons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\hoadons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\controllers\\monscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:controllers\\monscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\index_admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\index_admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\danhsachhoadon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\danhsachhoadon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\views\\mons\\createhoadon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A40648D5-8351-43B3-92F9-E2F5F4D0241D}|Demo_ChangTea.csproj|solutionrelative:views\\mons\\createhoadon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,29 +62,135 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\HoaDons\\Index.cshtml",
-              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\Index.cshtml",
-              "RelativeToolTip": "Views\\HoaDons\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\Index.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Index.cshtml",
+              "RelativeToolTip": "Views\\Mons\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T10:28:57.808Z",
+              "WhenOpened": "2024-12-04T13:04:53.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DoanhThu.cshtml",
-              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\DoanhThu.cshtml",
-              "RelativeDocumentMoniker": "Views\\HoaDons\\DoanhThu.cshtml",
-              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\HoaDons\\DoanhThu.cshtml",
-              "RelativeToolTip": "Views\\HoaDons\\DoanhThu.cshtml",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAHUAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "Models\\Model1.edmx",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-04T13:38:43.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\Edit.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Mons\\Edit.cshtml",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAHoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-03T10:28:02.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T13:04:42.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MonsController.cs",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Controllers\\MonsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MonsController.cs",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Controllers\\MonsController.cs",
+              "RelativeToolTip": "Controllers\\MonsController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwD0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:11:27.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\Details.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Details.cshtml",
+              "RelativeToolTip": "Views\\Mons\\Details.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:04:31.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\Delete.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Mons\\Delete.cshtml",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAAAG8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:04:21.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DanhSachHoaDon.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\DanhSachHoaDon.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\DanhSachHoaDon.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\DanhSachHoaDon.cshtml",
+              "RelativeToolTip": "Views\\Mons\\DanhSachHoaDon.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:04:20.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateHoaDon.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\CreateHoaDon.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\CreateHoaDon.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\CreateHoaDon.cshtml",
+              "RelativeToolTip": "Views\\Mons\\CreateHoaDon.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:04:18.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\Create.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Create.cshtml",
+              "RelativeToolTip": "Views\\Mons\\Create.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:03:55.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index_Admin.cshtml",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Index_Admin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Mons\\Index_Admin.cshtml",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Views\\Mons\\Index_Admin.cshtml",
+              "RelativeToolTip": "Views\\Mons\\Index_Admin.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T13:00:49.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Ph\u00E2n t\u00EDch thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng\\Demo_ChangTea\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:53:55.426Z"
             }
           ]
         }

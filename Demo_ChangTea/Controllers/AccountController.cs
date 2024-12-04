@@ -25,7 +25,7 @@ namespace Demo_ChangTea.Controllers
                 {
                     // Successful login logic
                     Session["Username"] = model.Username;
-                    return RedirectToAction("Create", "Mons");
+                    return RedirectToAction("Index_Admin", "Mons");
                 }
                 else
                 {
@@ -112,6 +112,7 @@ namespace Demo_ChangTea.Controllers
             }
             return View(model); // Return the model with errors if validation fails
         }
+
         // GET: Account
         public ActionResult Index()
         {

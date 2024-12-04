@@ -14,8 +14,14 @@ namespace Demo_ChangTea.Controllers
     public class MonsController : Controller
     {
         private QL_ChangTeaEntities db = new QL_ChangTeaEntities();
-       
+
         // GET: Mons
+
+        public ActionResult Index_Admin()
+        {
+            return View(db.Mons.ToList());
+        }
+
         public ActionResult Index()
         {
             return View(db.Mons.ToList());
@@ -47,16 +53,16 @@ namespace Demo_ChangTea.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaMon,TenMon,AnhMon,Size,DonVi,DonGia,MoTa")] Mon mon)
+        public ActionResult Create([Bind(Include = "MaMon,TenMon,AnhMon,MaKichThuoc,DonVi,DonGia,MoTa")] Mon mon)
         {
             if (ModelState.IsValid)
             {
                 db.Mons.Add(mon);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index_Admin");
             }
 
-            return View(mon);
+            return View("Index_Admin");
         }
 
         // GET: Mons/Edit/5
@@ -79,15 +85,15 @@ namespace Demo_ChangTea.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaMon,TenMon,AnhMon,Size,DonVi,DonGia,MoTa")] Mon mon)
+        public ActionResult Edit([Bind(Include = "MaMon,TenMon,AnhMon,MaKichThuoc,DonVi,DonGia,MoTa")] Mon mon)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(mon).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index_Admin");
             }
-            return View(mon);
+            return View("Index_Admin");
         }
 
         // GET: Mons/Delete/5
