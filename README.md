@@ -1,5 +1,37 @@
-# QL_ChangTea
-Mục tiêu chính phát triển hệ thống gồm những chức năng như: nhận và xử lý đơn đặt hàng, cập nhật hàng đã bán và kho nguyên liệu, xuất hóa đơn, báo cáo doanh thu nhằm hỗ trợ các bộ phận nhân viên để tối ưu hóa thời gian quản lí, cập nhật và tăng cường năng suất bán hàng của quán, giúp cho quán kiểm soát được doanh thu tốt hơn, giúp cho nghiệp vụ bán hàng của quán ngày càng trở nên chuyên nghiệp hơn. Từ đó hoàn thiện và tối ưu hóa hệ thống quản lý tổng thể để hỗ trợ các bộ phận chính trong tổ chức. 
+# 🧋 QL_ChangTea
 
-![image](https://github.com/user-attachments/assets/8b0aaf5f-e825-4b70-b767-b1d206975bb6)
+## 📖 Giới thiệu
 
+**ChangTea** là quán trà sữa do chị Dương Quỳnh Ngọc (26 tuổi) làm chủ, hoạt động từ **8h30 đến 22h** hàng ngày. Quán chính thức thành lập ngày **20/01/2022** và khai trương vào ngày **15/03/2022**, đánh dấu cột mốc quan trọng trên chặng đường kinh doanh. Tính đến nay, quán đã hoạt động hơn **2 năm**.
+
+Ngay từ ngày khai trương, ChangTea đã nhận được sự ủng hộ nhiệt tình nhờ vào:
+- Không gian thoải mái 🛋️
+- Sản phẩm chất lượng 🍹
+
+Hiện tại, ChangTea đã mở rộng với **2 chi nhánh**:
+- 📍 **Chi nhánh 1:** Bình Dương (119 KP Khánh Hòa, P. Tân Phước Khánh, Tân Uyên)
+- 📍 **Chi nhánh 2:** Nha Trang (15 Lam Sơn, Phước Hòa)
+
+Sắp tới sẽ khai trương chi nhánh mới tại Nha Trang, đánh dấu bước phát triển vững chắc trong chiến lược mở rộng thị trường.
+
+---
+
+## 🎯 Mục tiêu phát triển hệ thống
+
+- 🛒 **Nhận và xử lý đơn đặt hàng** nhanh chóng, chính xác.
+- 📦 **Cập nhật hàng hóa đã bán và kho nguyên liệu** kịp thời.
+- 🧾 **Xuất hóa đơn và báo cáo doanh thu** minh bạch.
+- ⏱️ **Tối ưu hóa thời gian quản lý và nâng cao năng suất bán hàng.**
+- 📊 **Kiểm soát doanh thu chặt chẽ.**
+- 🤝 **Tăng tính chuyên nghiệp trong nghiệp vụ bán hàng.**
+- ⚙️ **Hoàn thiện và tối ưu hệ thống quản lý tổng thể hỗ trợ các bộ phận vận hành hiệu quả.**
+
+---
+
+## 📊 Sơ đồ phân rã chức năng
+
+![Sơ đồ phân rã chức năng](https://github.com/user-attachments/assets/8b0aaf5f-e825-4b70-b767-b1d206975bb6)
+
+---
+> **📌 Lưu ý:**  
+> Bài tập dự án chỉ mang tính chất tham khảo
