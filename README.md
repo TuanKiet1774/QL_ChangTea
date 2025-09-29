@@ -32,7 +32,7 @@ Sắp tới sẽ khai trương chi nhánh mới tại Nha Trang, đánh dấu b�
 
 ![Sơ đồ phân rã chức năng](https://github.com/user-attachments/assets/8b0aaf5f-e825-4b70-b767-b1d206975bb6)
 
-> Cài Power Designer để thiết kế các sơ đồ ERD các mức: [Tại đây](https://1024terabox.com/s/1uxWXJATE0DmHAmklFBWc7A)
+> Cài Power Designer để thiết kế các sơ đồ ERD các mức: [Tại đây](https://1024terabox.com/s/1OxOFfDZ5750Kh3-PujHIMg)
 ---
 > **📌 Lưu ý:**  
 > Bài tập dự án chỉ mang tính chất tham khảo
