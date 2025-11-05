@@ -34,6 +34,12 @@ Sắp tới sẽ khai trương chi nhánh mới tại Nha Trang, đánh dấu b�
 
 > Cài Power Designer để thiết kế các sơ đồ ERD các mức: [Tại đây](https://1024terabox.com/s/1OxOFfDZ5750Kh3-PujHIMg)
 ---
+
+## 🖼️Ảnh minh hoạ
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a6e8f056-cba5-43f6-a531-2f41b53dadf1" />
+
+---
 > **📌 Lưu ý:**  
 > Bài tập dự án chỉ mang tính chất tham khảo
 
