@@ -1,5 +1,3 @@
-# 🧋 Trang quản lý của hàng trà sữa ChangTea
-
 ## 📖 Giới thiệu
 
 **ChangTea** là quán trà sữa do chị Dương Quỳnh Ngọc (26 tuổi) làm chủ, hoạt động từ **8h30 đến 22h** hàng ngày. Quán chính thức thành lập ngày **20/01/2022** và khai trương vào ngày **15/03/2022**, đánh dấu cột mốc quan trọng trên chặng đường kinh doanh. Tính đến nay, quán đã hoạt động hơn **2 năm**.
@@ -33,6 +31,19 @@ Sắp tới sẽ khai trương chi nhánh mới tại Nha Trang, đánh dấu b�
 ![Sơ đồ phân rã chức năng](https://github.com/user-attachments/assets/8b0aaf5f-e825-4b70-b767-b1d206975bb6)
 
 > Cài Power Designer để thiết kế các sơ đồ ERD các mức: [Tại đây](https://1024terabox.com/s/1OxOFfDZ5750Kh3-PujHIMg)
+
+Tải file Power Designer về máy -> next cho đến khi kết thúc
+Tải file pdflm16.dll về máy 
+- Copy hoặc Cut file pdflm16.dll
+- Vào ổ đĩa cài đặt Power Designer (Thường là ổ C)
+- Tìm đến Program Files(x86) -> mở Sybase -> mở PowerDesigner 16
+- Paste file pdflm16.dll vào -> chọn "Replace the file in the destination"
+
+Muốn đưa app ra bên ngoài Desktop
+- Window -> Search PowerDesigner
+- Mở tùy chọn của App -> Open File Location
+- Chọn biểu tượng của App kéo ra ngoài Desktop
+
 ---
 
 ## 🖼️Ảnh minh hoạ
